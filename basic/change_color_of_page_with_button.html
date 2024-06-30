@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        h1{
+        text-align: center;
+        margin-top: 100px;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        animation: colors 2s infinite alternate;
+        }
         #div1{
             display: flex;
             justify-content: center;
-            margin-top: 300px;
+            margin-top: 150px;
         }
         button{
             border: none;
@@ -16,12 +23,25 @@
             padding: 10px;
             background-color:rgb(80, 80, 249);
             color: white;
-            box-shadow: 1px 1px 10px black;
-            
+            box-shadow: 1px 1px 10px black;}
+        @keyframes colors {
+            0% {
+                color: rgb(39, 39, 190);}
+           
+            40% {
+                color: rgb(36, 202, 122);}
+            80% {
+                color: rgb(232, 25, 180);
+            }
+            100% {
+                color: rgb(200, 128, 12);
+            }
+
         }
     </style>
 </head>
 <body>
+    <h1>Click the button bellow to display random color</h1>
     <div id="div1">
         <button id="btn"> Click Me</button>
     </div>
